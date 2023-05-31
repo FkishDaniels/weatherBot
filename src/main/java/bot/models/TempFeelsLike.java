@@ -3,12 +3,12 @@ package bot.models;
 import bot.interfaces.Weather;
 import bot.json.JsonParser;
 
-public class Temperature implements Weather {
+public class TempFeelsLike implements Weather {
     private JsonParser jsonParser = new JsonParser();
     @Override
     public String check(String city) {
         jsonParser.init(city);
-        return jsonParser.getTemp();
+        return jsonParser.getFeelsLike();
     }
 
     @Override

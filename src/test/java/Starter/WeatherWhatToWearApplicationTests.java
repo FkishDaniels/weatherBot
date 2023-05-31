@@ -1,4 +1,4 @@
-package com.example.weatherWhatToWear;
+package Starter;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
