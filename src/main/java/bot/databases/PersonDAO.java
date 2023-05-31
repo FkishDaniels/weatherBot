@@ -31,7 +31,7 @@ public class PersonDAO {
     }
 
     public Person show(long ChatId){
-        return jdbcTemplate.query("SELECT * FROM PERSON WHERE ChatId = ?", new Object[]{ChatId},
+        return jdbcTemplate.query("SELECT * FROM PERSON WHERE chatId = ?", new Object[]{ChatId},
                 new BeanPropertyRowMapper<>(Person.class)).stream().findAny().orElse(null);
     }
 }
